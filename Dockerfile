@@ -6,6 +6,7 @@ RUN npm ci --omit=dev
 COPY src ./src
 COPY contracts ./contracts
 COPY migrations ./migrations
+RUN chown -R app:app /app
 USER app
 EXPOSE 3000
 CMD ["node", "src/server.js"]
