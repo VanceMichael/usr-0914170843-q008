@@ -1,0 +1,15 @@
+.git
+.gitignore
+.env
+*.key
+*.pem
+node_modules
+.venv
+venv
+dist
+build
+target
+coverage
+__pycache__
+.pytest_cache
+data

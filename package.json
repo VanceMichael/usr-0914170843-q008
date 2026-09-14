@@ -1,0 +1,8 @@
+{
+  "name": "quotation-dispute-archive",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {"test": "node --test test/*.test.js", "start": "node src/server.js"},
+  "dependencies": {"express": "5.1.0"}
+}

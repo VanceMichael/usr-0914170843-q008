@@ -1,0 +1,13 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": ["record_id", "paragraph_id", "version", "kind", "source_digest", "submitted_by"],
+  "properties": {
+    "record_id": {"type": "string", "minLength": 1},
+    "paragraph_id": {"type": "string", "minLength": 1},
+    "version": {"type": "integer", "minimum": 1},
+    "kind": {"enum": ["quotation", "interpretation", "confirmation", "objection", "withdrawal"]},
+    "source_digest": {"type": "string", "pattern": "^[a-f0-9]{64}$"},
+    "submitted_by": {"type": "string", "minLength": 1}
+  }
+}
